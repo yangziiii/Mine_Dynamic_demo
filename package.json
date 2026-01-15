@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "dev:h5": "cross-env NODE_ENV=development uniapp-cli dev --platform h5",
-    "build:h5": "cross-env NODE_ENV=production uniapp-cli build --platform h5"
+    "build:h5": "cross-env NODE_ENV=production uniapp-cli build --platform h5",
+    "deploy": "npm run build:h5 && echo 'Demo built successfully! Visit your GitHub Pages URL to view.'",
+    "serve": "npx serve dist/build/h5"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.2",
